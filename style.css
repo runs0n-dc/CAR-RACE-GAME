@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.carGame{
+    width: 100%;
+    height: 100vh;
+}
+img{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    object-fit: cover;
+}
+.road{
+    width: 400px;
+    height: 100%;
+    background: #2d3436;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    border-left: 5px dashed wheat;
+    border-right: 5px dashed wheat;
+}
+.startGame{
+    background-color: tomato;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    padding: 25px;
+    font-size: 25px;
+    width: 50%;
+    text-align: center;
+    border: 2px solid #ef0893;
+    z-index: 1;
+}
+.hidden{
+    display: none;
+}
+.line{
+    width: 12px;
+    height: 120px;
+    background-color: white;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+.cars,.enemies{
+    height: 80px;
+    width: 60px;
+    background-color: blueviolet;
+    position: absolute;
+    bottom: 30px;
+    background-image: url('car.png');
+    background-size: 100% 100%;
+}
+.score{
+    position: absolute;
+    top: 30px;
+    left: 10vh;
+    width: 200px;
+    background: #2479b6;
+    text-align: center;
+    padding: 20px;
+    font-size: large;
+    border: 3px solid rgb(128, 141, 152);
+    box-shadow: 0 5px 5px #777;
+}
